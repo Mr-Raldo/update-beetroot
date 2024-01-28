@@ -1,0 +1,11 @@
+{% extends "wagtailadmin/404.html" %}
+{% load static %}
+
+{% block branding_logo %}
+    <img src="{% static 'images/beetrootlogo.png' %}" alt="Custom Project" width="80" />
+{% endblock %}
+
+
+{% block branding_favicon %}
+    <link rel="shortcut icon" href="{% static 'images/favicon1.ico' %}" />
+{% endblock %}

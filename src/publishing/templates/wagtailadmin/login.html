@@ -1,0 +1,25 @@
+{% extends "wagtailadmin/login.html" %}
+{% load i18n wagtailadmin_tags %}
+{% load static %}
+{% block titletag %}{% trans "Sign in" %}{% endblock %}
+
+<h1>{% block branding_login %}
+    <img src="{% static 'images/beetrootlogo.png' %}" alt="logo" width="80" />
+    <br>{% trans "Sign in to Beetroot CMS" %}{% endblock %}
+</h1>
+
+{% block branding_favicon %}
+    <link rel="shortcut icon" href="{% static 'images/favicon1.ico' %}" />
+{% endblock %}
+
+
+
+{% block below_login %}{% endblock %}
+{% block branding_logo %}
+            <div class="login-logo">
+                
+                <img src="{% static 'images/beetroot_trademark_logo_.png' %}" alt="logo" width="80" />
+            </div>
+{% endblock %}
+
+
